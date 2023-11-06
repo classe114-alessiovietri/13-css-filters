@@ -17,4 +17,53 @@ html {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    width: 25%;
+    background-color: aqua;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.filtro-grayscale {
+    filter: grayscale(1);
+    transition: filter 3s;
+}
+
+.filtro-grayscale:hover {
+    filter: grayscale(0);
+}
+
+.filtro-sepia {
+    filter: sepia(0.9);
+}
+
+.filtro-saturate {
+    filter: saturate(0.7);
+}
+
+.filtro-hue-rotate {
+    filter: hue-rotate(60deg);
+}
+
+.filtro-opacity {
+    filter: opacity(0.3);
+}
+
+.filtro-brightness {
+    filter: brightness(25%);
+}
+
+.filtro-blur {
+    filter: blur(10px);
+}
+
+.filtro-plus {
+    filter: opacity(0.3) brightness(0.2);
 }
